@@ -1,7 +1,9 @@
 package main.bo;
 
 public class Dresseur {
+    private int id ;
     private String nom,prenom;
+
 
     public Dresseur(String nom, String prenom) {
         this.nom = nom;
@@ -22,5 +24,13 @@ public class Dresseur {
 
     public void setPrenom(String prenom) {
         this.prenom = prenom;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

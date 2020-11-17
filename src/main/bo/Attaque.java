@@ -2,8 +2,12 @@ package main.bo;
 
 public class Attaque {
 
+    private int id;
     private String nom;
     private int force;
+
+    public Attaque() {
+    }
 
     public Attaque(String nom, int force) {
         this.nom = nom;
@@ -24,5 +28,13 @@ public class Attaque {
 
     public void setForce(int force) {
         this.force = force;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
