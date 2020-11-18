@@ -14,6 +14,12 @@ public class Attaque {
         this.force = force;
     }
 
+    public Attaque(int id,String nom, int force) {
+        this.id =id;
+        this.nom = nom;
+        this.force = force;
+    }
+
     public String getNom() {
         return nom;
     }
@@ -36,5 +42,14 @@ public class Attaque {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Attaque{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", force=" + force +
+                '}';
     }
 }

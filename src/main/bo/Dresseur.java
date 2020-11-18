@@ -4,6 +4,13 @@ public class Dresseur {
     private int id ;
     private String nom,prenom;
 
+    public Dresseur() {
+    }
+    public Dresseur(int id, String nom, String prenom) {
+        this.id=id;
+        this.nom = nom;
+        this.prenom = prenom;
+    }
 
     public Dresseur(String nom, String prenom) {
         this.nom = nom;
